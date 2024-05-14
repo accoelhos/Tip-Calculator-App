@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+
+*{
+  font-family: "Coda", system-ui;
+}
+.main{
+  background-color: #CDC4E1!important;
+}
+.container-infos{
+  width: 60%;
+  height: 65%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.title{
+  color: #6F5E95;
+}
+form label{
+  @apply block tracking-wider mb-1 mt-5 text-xl;
+  color: #6F5E95;
+}
+form input{
+  @apply border py-3 px-4 rounded outline-none;
+  border-color: #eeee;
+  border-radius: 17px;
+  background-color: #eeee;
+  transition: 0.5s;
+  width: 70%;
+
+}
+form input:active, form input::after, form input:focus{
+  border-color: #C3A7FF;
+}
+.input-error{
+  border-color: rgb(211, 32, 32);
+}
+.error-message {
+  color: rgb(211, 32, 32);
+  font-size: 15px;
+  margin-top: 5px;
+  position: absolute;
+  bottom: -20px; /* Ajuste conforme necessário */
+  left: 0;
+}
+#btn-gorjeta{
+  color: #fff;
+  background-color: #6F5E95;
+  border-radius: 10px;
+  width: 60px;
+  height: 35px;
+}
+.botoes{
+  width: 70%;
+}
