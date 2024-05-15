@@ -4,55 +4,120 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
 
-*{
+* {
   font-family: "Coda", system-ui;
 }
-.main{
-  background-color: #CDC4E1!important;
+
+.main {
+  background-color: #CDC4E1 !important;
 }
-.container-infos{
-  width: 60%;
+
+.container-infos {
+  width: 50%;
   height: 65%;
   background-color: #fff;
   border-radius: 20px;
 }
-.title{
+.infos-tip{
+    margin-top: -15px;
+}
+.title {
   color: #6F5E95;
 }
-form label{
+
+form label {
   @apply block tracking-wider mb-1 mt-5 text-xl;
   color: #6F5E95;
 }
-form input{
+
+form input {
   @apply border py-3 px-4 rounded outline-none;
   border-color: #eeee;
   border-radius: 17px;
   background-color: #eeee;
   transition: 0.5s;
-  width: 70%;
-
+  width: 100%;
 }
-form input:active, form input::after, form input:focus{
+
+form input:active,
+form input::after,
+form input:focus {
   border-color: #C3A7FF;
 }
-.input-error{
+
+.input-error {
   border-color: rgb(211, 32, 32);
 }
+
 .error-message {
   color: rgb(211, 32, 32);
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 5px;
-  position: absolute;
-  bottom: -20px; /* Ajuste conforme necessário */
-  left: 0;
 }
-#btn-gorjeta{
+
+.field-container {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+#btn-gorjeta {
   color: #fff;
   background-color: #6F5E95;
   border-radius: 10px;
-  width: 60px;
+  width: 100%;
   height: 35px;
+  transition: 0.3s;
 }
-.botoes{
-  width: 70%;
+
+#btn-gorjeta:hover,
+#btn-gorjeta::after,
+#btn-gorjeta:focus, .selected {
+  background-color: #C3A7FF;
+}
+
+#gorjeta {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+}
+
+#gorjeta::placeholder {
+  font-size: 13px;
+  margin-left: -18px;
+}
+
+.botoes {
+  width: 100%;
+}
+.container-results{
+    background-color: #6F5E95;
+    border-radius: 20px;
+    width: 90%;
+    height: 85%;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.title-results{
+    color: #ffffff;
+    font-size: 17px;
+}
+.valor{
+    color: #C3A7FF;
+    font-size: 20px;
+}
+#conta{
+    gap: 4.7rem;
+}
+.reset{
+    margin-top: 20px;
+    color: #fff;
+    background-color: #C3A7FF;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    transition: 0.3s;
+}
+.reset:hover{
+    background-color: #d3c0fd;
+
 }
