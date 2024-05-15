@@ -71,10 +71,13 @@ form input:focus {
 
 #btn-gorjeta:hover,
 #btn-gorjeta::after,
-#btn-gorjeta:focus, .selected {
+#btn-gorjeta:focus {
   background-color: #C3A7FF;
 }
-
+.selected{
+    background-color: #C3A7FF!important;
+    
+}
 #gorjeta {
   width: 100%;
   height: 35px;

@@ -42,6 +42,9 @@ export default function App() {
     if (selectedTip) {
       gorjetaValue = (contaValue * parseInt(selectedTip) / 100);
     }
+    else{
+      gorjetaValue =(contaValue * gorjeta)/100;
+    }
 
     const tipAmountValue = gorjetaValue;
     const totalAmountValue = contaValue + tipAmountValue;
@@ -55,7 +58,6 @@ export default function App() {
   };
 
   useEffect(() => {
-    
     const dummyValues = { conta: "", gorjeta: "", pessoas: "" };
     calculateResults(dummyValues);
   }, [selectedTip]);
@@ -103,7 +105,6 @@ export default function App() {
                           onClick={() => {
                             setSelectedTip(tip);
                             setFieldValue('selectedTip', tip);
-                            setFieldValue('gorjeta', '');
                             calculateResults({ ...values, gorjeta: '', selectedTip: tip });
                           }}
                         >
